@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Es26_GraficoMSChart;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace mschart
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmChart());
+            Application.Run(new frmMSChart());
         }
     }
 }

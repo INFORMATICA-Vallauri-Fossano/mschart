@@ -1,6 +1,6 @@
-﻿namespace mschart
+﻿namespace Es26_GraficoMSChart
 {
-    partial class frmChart
+    partial class frmMSChart
     {
         /// <summary>
         /// Variabile di progettazione necessaria.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.myChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnGraficoBarre = new System.Windows.Forms.Button();
             this.btnTortaInbutoPiramide = new System.Windows.Forms.Button();
@@ -46,84 +46,94 @@
             this.myChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.myChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.myChart.Legends.Add(legend2);
-            this.myChart.Location = new System.Drawing.Point(12, 12);
+            chartArea1.Name = "ChartArea1";
+            this.myChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.myChart.Legends.Add(legend1);
+            this.myChart.Location = new System.Drawing.Point(16, 15);
+            this.myChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.myChart.Name = "myChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.myChart.Series.Add(series2);
-            this.myChart.Size = new System.Drawing.Size(649, 300);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.myChart.Series.Add(series1);
+            this.myChart.Size = new System.Drawing.Size(865, 434);
             this.myChart.TabIndex = 0;
             this.myChart.Text = "chart1";
             // 
             // btnGraficoBarre
             // 
             this.btnGraficoBarre.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnGraficoBarre.Location = new System.Drawing.Point(12, 318);
+            this.btnGraficoBarre.Location = new System.Drawing.Point(13, 480);
+            this.btnGraficoBarre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGraficoBarre.Name = "btnGraficoBarre";
-            this.btnGraficoBarre.Size = new System.Drawing.Size(139, 23);
+            this.btnGraficoBarre.Size = new System.Drawing.Size(185, 28);
             this.btnGraficoBarre.TabIndex = 1;
             this.btnGraficoBarre.Text = "Grafico a barre";
             this.btnGraficoBarre.UseVisualStyleBackColor = true;
-            this.btnGraficoBarre.Click += new System.EventHandler(this.btnGraficoBarre_Click);
+            this.btnGraficoBarre.Click += new System.EventHandler(this.btnBarre_Click);
             // 
             // btnTortaInbutoPiramide
             // 
             this.btnTortaInbutoPiramide.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnTortaInbutoPiramide.Location = new System.Drawing.Point(12, 347);
+            this.btnTortaInbutoPiramide.Location = new System.Drawing.Point(13, 516);
+            this.btnTortaInbutoPiramide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTortaInbutoPiramide.Name = "btnTortaInbutoPiramide";
-            this.btnTortaInbutoPiramide.Size = new System.Drawing.Size(284, 23);
+            this.btnTortaInbutoPiramide.Size = new System.Drawing.Size(379, 28);
             this.btnTortaInbutoPiramide.TabIndex = 2;
             this.btnTortaInbutoPiramide.Text = "Grafico a Torta, Inbuto, Piramide";
             this.btnTortaInbutoPiramide.UseVisualStyleBackColor = true;
+            this.btnTortaInbutoPiramide.Click += new System.EventHandler(this.btnTortaImbutoPiramide_Click);
             // 
             // btnDoppio
             // 
             this.btnDoppio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDoppio.Location = new System.Drawing.Point(522, 318);
+            this.btnDoppio.Location = new System.Drawing.Point(693, 480);
+            this.btnDoppio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDoppio.Name = "btnDoppio";
-            this.btnDoppio.Size = new System.Drawing.Size(139, 23);
+            this.btnDoppio.Size = new System.Drawing.Size(185, 28);
             this.btnDoppio.TabIndex = 3;
             this.btnDoppio.Text = "Grafico doppio";
             this.btnDoppio.UseVisualStyleBackColor = true;
+            this.btnDoppio.Click += new System.EventHandler(this.btnDoppio_Click);
             // 
             // btnEsporta
             // 
             this.btnEsporta.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnEsporta.Location = new System.Drawing.Point(522, 347);
+            this.btnEsporta.Location = new System.Drawing.Point(693, 516);
+            this.btnEsporta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEsporta.Name = "btnEsporta";
-            this.btnEsporta.Size = new System.Drawing.Size(139, 23);
+            this.btnEsporta.Size = new System.Drawing.Size(185, 28);
             this.btnEsporta.TabIndex = 4;
             this.btnEsporta.Text = "ESPORTA";
             this.btnEsporta.UseVisualStyleBackColor = true;
+            this.btnEsporta.Click += new System.EventHandler(this.btnEsporta_Click);
             // 
             // cmbTipoBarre
             // 
             this.cmbTipoBarre.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cmbTipoBarre.FormattingEnabled = true;
-            this.cmbTipoBarre.Location = new System.Drawing.Point(157, 318);
+            this.cmbTipoBarre.Location = new System.Drawing.Point(206, 480);
+            this.cmbTipoBarre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTipoBarre.Name = "cmbTipoBarre";
-            this.cmbTipoBarre.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoBarre.Size = new System.Drawing.Size(160, 24);
             this.cmbTipoBarre.TabIndex = 5;
             // 
             // cmbTipoTIP
             // 
             this.cmbTipoTIP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cmbTipoTIP.FormattingEnabled = true;
-            this.cmbTipoTIP.Location = new System.Drawing.Point(302, 345);
+            this.cmbTipoTIP.Location = new System.Drawing.Point(400, 514);
+            this.cmbTipoTIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTipoTIP.Name = "cmbTipoTIP";
-            this.cmbTipoTIP.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoTIP.Size = new System.Drawing.Size(160, 24);
             this.cmbTipoTIP.TabIndex = 6;
             // 
-            // frmChart
+            // frmMSChart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 450);
+            this.ClientSize = new System.Drawing.Size(899, 554);
             this.Controls.Add(this.cmbTipoTIP);
             this.Controls.Add(this.cmbTipoBarre);
             this.Controls.Add(this.btnEsporta);
@@ -131,9 +141,10 @@
             this.Controls.Add(this.btnTortaInbutoPiramide);
             this.Controls.Add(this.btnGraficoBarre);
             this.Controls.Add(this.myChart);
-            this.Name = "frmChart";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmMSChart";
             this.Text = "MS CHART";
-            this.Load += new System.EventHandler(this.frmChart_Load);
+            this.Load += new System.EventHandler(this.frmMSChart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myChart)).EndInit();
             this.ResumeLayout(false);
 
